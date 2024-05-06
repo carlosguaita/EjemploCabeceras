@@ -24,7 +24,17 @@ float division(float a, float b){
     return div;
 }
 
-void imprimirResultados(float a){
-    printf("El resultado de la operacion es: %.2f\n",a);
+void imprimirResultados(float sum, float rest, float mult, float div){
+    printf("El resultado de la suma es: %.2f\n",sum);
+    printf("El resultado de la resta es: %.2f\n",rest);
+    printf("El resultado de la multiplicacion es: %.2f\n",mult);
+    printf("El resultado de la division es: %.2f\n",div);
+}
+
+float leerNumero(int a){
+    float num;
+    printf("Ingrese el numero %d: ",a);
+    scanf("%f",&num);
+    return num;
 }
 
